@@ -1,7 +1,7 @@
 package drawing.impl;
 
 import drawing.DrawingApi;
-import drawing.context.Context;
+import drawing.context.DrawingContext;
 import drawing.operation.Circle;
 import drawing.operation.Line;
 import java.awt.Color;
@@ -39,7 +39,7 @@ public class AwtDrawing extends Frame implements DrawingApi {
     public void paint(Graphics g) {
         Graphics2D ga = (Graphics2D) g;
         ga.setPaint(COLOR);
-        Context.getInstance().getShapes().forEach(shape -> {
+        DrawingContext.getInstance().getShapes().forEach(shape -> {
             if (shape instanceof Line) {
                 draw(ga, (Line) shape);
             } else {

@@ -9,8 +9,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
-public class Context {
-    private static Context instance;
+public class DrawingContext {
+    private static DrawingContext instance;
     @Getter
     private final List<Shape> shapes = new ArrayList<>();
     @Getter
@@ -20,9 +20,9 @@ public class Context {
     @Setter
     private Integer drawingAreaHeight;
 
-    public static Context getInstance() {
+    public static DrawingContext getInstance() {
         if (instance == null) {
-            instance = new Context();
+            instance = new DrawingContext();
         }
         return instance;
     }

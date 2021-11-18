@@ -1,7 +1,7 @@
 package drawing.impl;
 
 import drawing.DrawingApi;
-import drawing.context.Context;
+import drawing.context.DrawingContext;
 import drawing.operation.Circle;
 import drawing.operation.Line;
 import javafx.application.Application;
@@ -34,7 +34,7 @@ public class JavaFxDrawing extends Application implements DrawingApi {
         Canvas canvas = new Canvas(getDrawingAreaWidth(), getDrawingAreaHeight());
         GraphicsContext gc = canvas.getGraphicsContext2D();
         gc.setFill(COLOR);
-        Context.getInstance().getShapes().forEach(shape -> {
+        DrawingContext.getInstance().getShapes().forEach(shape -> {
             if (shape instanceof Line) {
                 draw(gc, (Line) shape);
             } else {
