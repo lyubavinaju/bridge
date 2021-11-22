@@ -1,4 +1,4 @@
-package drawing.operation;
+package drawing.shape;
 
 public interface Shape {
 }

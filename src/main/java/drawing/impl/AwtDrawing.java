@@ -2,8 +2,8 @@ package drawing.impl;
 
 import drawing.DrawingApi;
 import drawing.context.DrawingContext;
-import drawing.operation.Circle;
-import drawing.operation.Line;
+import drawing.shape.Circle;
+import drawing.shape.Line;
 import java.awt.Color;
 import java.awt.Frame;
 import java.awt.Graphics;

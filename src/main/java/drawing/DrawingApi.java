@@ -1,8 +1,8 @@
 package drawing;
 
 import drawing.context.DrawingContext;
-import drawing.operation.Circle;
-import drawing.operation.Line;
+import drawing.shape.Circle;
+import drawing.shape.Line;
 
 public interface DrawingApi {
     default void setDrawingAreaWidth(int width) {

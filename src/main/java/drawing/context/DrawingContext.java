@@ -1,6 +1,6 @@
 package drawing.context;
 
-import drawing.operation.Shape;
+import drawing.shape.Shape;
 import java.util.ArrayList;
 import java.util.List;
 import lombok.AccessLevel;

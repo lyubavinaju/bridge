@@ -2,8 +2,8 @@ package drawing.impl;
 
 import drawing.DrawingApi;
 import drawing.context.DrawingContext;
-import drawing.operation.Circle;
-import drawing.operation.Line;
+import drawing.shape.Circle;
+import drawing.shape.Line;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
