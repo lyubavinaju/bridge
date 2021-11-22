@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
-public class DrawingContext {
+public final class DrawingContext {
     private static DrawingContext instance;
     @Getter
     private final List<Shape> shapes = new ArrayList<>();
